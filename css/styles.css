@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+
+}
+header {
+  display: flex;
+  background-color: green;
+  height: 80px;
+  width: 100vw;
+ 
+}
+
+#bell_icon {
+  width: 40px;
+
+}
+
+#vic_pic {
+  width: 60px;
+
+}
