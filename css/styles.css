@@ -9,13 +9,20 @@ header {
   width: 100vw;
  
 }
-
-#bell_icon {
-  width: 40px;
-
+nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav_bar {
+  background-color: darkgreen;
 }
 
 #vic_pic {
   width: 60px;
 
 }
+
+.nav_bar_img {
+  width: 40px;
+}
+
