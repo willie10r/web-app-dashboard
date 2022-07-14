@@ -4,31 +4,59 @@ body {
 }
 header {
   display: flex;
+  justify-content: space-between;
   background-color: green;
-  height: 80px;
+  height: 60px;
   
  
 }
 nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 45px;
+}
+h1,
+h3,
+.noti_bell {
+  margin-top: 15px;
+  
+}
+h1 {
+  margin-left: 10px;
+  font-size: x-large;
+
+}
+.noti_bell {
+  width: 30px;
+  margin-left: auto;
+  margin-right: 15px;
+
+}
+.nav_bar_img {
+  width: 30px;
+  margin-top: 7px;
+  
+ 
+}
+#vic_pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 10px;
+
+}
+.student_name {
+  margin: 20px 5px auto 0px;
+  font-weight: 100;
+  font-size: 15px;
+ 
 }
 .grid-container {
   display: grid;
   grid-template-rows: 1fr 4fr 4fr 4fr;
   grid-template-columns: 1fr 4fr;
-}
-.nav_bar {
-  background-color: darkgreen;
-}
-
-#vic_pic {
-  width: 60px;
-
-}
-
-.nav_bar_img {
-  width: 40px;
 }
 
 .gi-1 {
@@ -38,6 +66,26 @@ nav {
 }
 
 .gi-2 {
-  grid-row: 2 / 4;
+  
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  background-color: darkgreen;
+ }
+
+
+ @media (min-width: 768px) {
+
+/* styles for the next screen s */
+nav {
+  display: flex;
+  flex-direction: column;
+}
+  
+.gi-2 {
+  
+  grid-row: 2 / 5;
   grid-column: 1 / 2;
+  background-color: darkgreen;
+ }
+
  }
