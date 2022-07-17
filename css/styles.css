@@ -82,7 +82,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto 15px auto 15px;
+  margin: auto 15px 20px 15px;
 }
 .social-container {
   display: flex;
@@ -168,8 +168,8 @@ border-right: none;
 }
 #timezone {
   height: 30px;
-  width: 95%;
-  margin: 35px 15px 0px 15px;
+  width: 88%;
+  margin: 17px 15px 0px 15px;
 }
 .settings-button {
   margin: 10px 15px 20px 15px;
@@ -181,9 +181,14 @@ margin: 10px 15px 20px 15px;
 .sptp {
 
 }
+.switch-light {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  width: 88%;
+}
 #save {
   height: 30px;
-  width: 40%;
+  width: 45%;
   background-color:  #70c66b;
   border-radius: 10px;
   margin: 5px 15px 5px 0px;
@@ -192,7 +197,7 @@ margin: 10px 15px 20px 15px;
 }
 #cancel {
   height: 30px;
-  width: 40%;
+  width: 45%;
   background-color:  #6c6e6b;
   border-radius: 10px;
   margin: 5px 15px 5px 0px;
