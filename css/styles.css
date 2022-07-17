@@ -1,6 +1,35 @@
 body {
   margin: 0;
 }
+.student_name {
+  margin: 20px 5px auto 0px;
+  font-weight: 100;
+  font-size: 15px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "grid_header"
+  "grid_nav"
+  "grid_main";
+}
+.grid_header {
+  grid-area: grid_header;
+}
+.grid_nav {
+  grid-area: grid_nav;
+
+ }
+.grid_main {
+  display: grid;
+  grid-area: grid_main;
+}
+li {
+  display: inline;
+  list-style: none;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -80,39 +109,96 @@ h1 {
  font-size: xx-large;
 
 }
-.student_name {
-  margin: 20px 5px auto 0px;
-  font-weight: 100;
-  font-size: 15px;
+.members,
+.activity {
+  background-color: rgb(228, 228, 228);
+  border:  1px solid black;
+  border-bottom: none;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "grid_header"
-  "grid_nav"
-  "grid_main";
+.members-container,
+.activity-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(228, 228, 228);
+  border:  1px solid black;
+  height: 80px;
+border-top: none;
+border-right: none;
 }
-.grid_header {
-  grid-area: grid_header;
-}
-.grid_nav {
-  grid-area: grid_nav;
-
- }
-.grid_main {
-  display: grid;
-  grid-area: grid_main;
-}
-li {
-  display: inline;
-  list-style: none;
+.profile-image {
+  height: 60px;
+  border-radius: 40px;
 }
 
+.message,
+.widget-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-field,
+.form-area {
+  background-color: rgb(228, 228, 228);
+}
+#userField {
+  height: 40px;
+  margin: 5px 15px 5px 0px;
+  border-radius: 10px;
+  
+}
+#messageField {
+  height: 130px;
+  margin: 5px 15px 5px 0px;
+  border-radius: 10px;
+}
+#send {
+  height: 30px;
+  background-color:  #70c66b;
+  border-radius: 10px;
+  margin: 5px 15px 5px 0px;
+  font-size: medium;
+  font-weight: 700;
+}
+.message {
+  padding-left: 15px;
+}
 
+.settings {
+  padding: 5px 15px;
+ 
+}
+#timezone {
+  height: 30px;
+  width: 95%;
+  margin: 35px 15px 0px 15px;
+}
+.settings-button {
+  margin: 10px 15px 20px 15px;
 
+}
+.sen {
+margin: 10px 15px 20px 15px;
+}
+.sptp {
 
+}
+#save {
+  height: 30px;
+  width: 40%;
+  background-color:  #70c66b;
+  border-radius: 10px;
+  margin: 5px 15px 5px 0px;
+  font-size: medium;
+  font-weight: 700;
+}
+#cancel {
+  height: 30px;
+  width: 40%;
+  background-color:  #6c6e6b;
+  border-radius: 10px;
+  margin: 5px 15px 5px 0px;
+  font-size: medium;
+  font-weight: 700;
+}
 
 
 /* dont worry about anything below this linew till
