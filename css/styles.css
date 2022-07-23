@@ -65,8 +65,14 @@ body {
 .alert-banner-close {
   position: fixed;
   right: 3vw;
-
   margin-top: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.alert-banner-close:hover {
+  border: solid 1px;
+  border-radius: 5px;
+  background-color: #70c66b;
 }
 li {
   display: inline;
@@ -85,12 +91,11 @@ nav {
   background-color: darkgreen;
   padding-left: 10px;
 }
-#home_button:hover,
-#charts_button:hover,
-#members_button:hover,
-#settings_button:hover {
-  border: solid 1px gray;
-  border-radius: 15px;
+
+.nav_bar_img:hover {
+  border: solid 1px;
+  border-radius: 5px;
+  background-color: #70c66b;
 }
 h1,
 h3,
@@ -108,6 +113,11 @@ h1 {
   padding-right: 10px;
   border-right: solid 3px;
   border-color: #6c6e6b;
+}
+.noti_bell:hover {
+  border: solid 1px;
+  border-radius: 5px;
+  background-color: #70c66b;
 }
 .nav_bar_img {
   width: 30px;
