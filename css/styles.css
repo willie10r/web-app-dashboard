@@ -85,6 +85,13 @@ nav {
   background-color: darkgreen;
   padding-left: 10px;
 }
+#home_button:hover,
+#charts_button:hover,
+#members_button:hover,
+#settings_button:hover {
+  border: solid 1px gray;
+  border-radius: 15px;
+}
 h1,
 h3,
 .noti_bell {
