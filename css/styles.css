@@ -63,8 +63,9 @@ body {
   margin-right: 15px;
 }
 .alert-banner-close {
-  display: flex;
-  margin-left: 625px;
+  position: fixed;
+  right: 3vw;
+
   margin-top: 13px;
 }
 li {
@@ -212,7 +213,15 @@ h1 {
 .members-text,
 .activity-text {
   width: 100%;
-  margin: 0px 35px 15px 15px;
+  margin: 0px 35px 0px 15px;
+}
+.hour,
+.act-text {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.act-text {
+  margin-top: 10px;
 }
 .date {
   margin: 30px 15px 0px auto;
@@ -223,8 +232,11 @@ h1 {
   margin: 10px 5px auto 15px;
 }
 .member-title {
+  margin: 0;
   padding-left: 20px;
   border: solid 1px black;
+  border-bottom: none;
+  border-right: none;
 }
 
 .message,
