@@ -330,6 +330,9 @@ h1 {
  after the main styleing is done. */
 
 /* styles for the next screen s */
+@media (min-width: 320px) {
+}
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 55px 1fr;
