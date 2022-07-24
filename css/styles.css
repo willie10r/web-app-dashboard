@@ -10,20 +10,57 @@ body {
     "grid_nav"
     "grid_main";
 }
-.header {
+.grid_header {
   grid-area: grid_header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: green;
+  margin: 0px 0px 0px 0px;
 }
-.navigation {
-  grid-area: grid_nav;
-}
-.main {
-  grid-area: grid_main;
+h1 {
+  font-weight: 600;
+  font-size: x-large;
+  margin-right: 1em;
 }
 .noti-bell {
   width: 25px;
+  margin: 17px 0px auto 20px;
+  padding: 2px;
+  border-right: solid 1px #333;
+}
+.noti-bell:hover {
+  background-color: #70c66b;
+  border-radius: 10px;
+}
+#vic_pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 10px 0px auto 0px;
+}
+.student_name {
+  font-size: medium;
+}
+.grid_nav {
+  display: flex;
+  justify-content: space-between;
+  grid-area: grid_nav;
+  background-color: darkgreen;
+  padding: 15px 30px 5px 30px;
+  height: 35px;
 }
 .nav_bar_img {
   width: 25px;
+}
+.nav_bar_img:hover {
+  background-color: #70c66b;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.grid_main {
+  grid-area: grid_main;
 }
 
 @media (min-width: 768px) {
