@@ -7,14 +7,13 @@ body {
   font-size: 15px;
 }
 .grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
+  grid-template-columns: 55px 1fr;
   grid-template-areas:
     "grid_header"
-    "grid_nav "
+    "grid_nav"
     "grid_main";
 }
+
 .grid_header {
   grid-area: grid_header;
 }
@@ -26,12 +25,28 @@ body {
   grid-area: grid_main;
 }
 .main-header {
-  display: flex;
-  flex-direction: row;
-  grid-column-start: 1;
-  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.alert-container {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.traffic {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.daily {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 .headline {
   margin-left: 15px;
@@ -45,12 +60,7 @@ body {
 }
 
 /* working section on the alert prompt */
-.alert-container {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
+
 .alert-banner {
   display: flex;
   flex-direction: row;
@@ -360,6 +370,222 @@ h1 {
   .activity,
   .settings {
     grid-column: 2 / span 1;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "grid_header"
+      "grid_nav "
+      "grid_main";
+  }
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .alert-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .headline {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .text-area {
+    margin: 15px 0px 0px 10px;
+    background-color: #b7b9b6;
+    height: 30px;
+    width: 75vw;
+  }
+
+  /* working section on the alert prompt */
+
+  .alert-banner {
+    height: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .alert-banner-close {
+    position: absolute;
+    right: 2vw;
+    margin-top: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10px;
+  }
+
+  h1,
+  h3,
+  .noti_bell {
+    margin-top: 15px;
+  }
+  h1 {
+    margin-left: 10px;
+  }
+  .noti_bell {
+    width: 30px;
+    margin: 10px 15px 10px auto;
+    padding-top: 7px;
+    padding-right: 10px;
+  }
+  .nav_bar_img {
+    width: 30px;
+    margin-top: 7px;
+  }
+  .social-image {
+    width: 40px;
+    margin: 20px 20px auto 20px;
+    height: 40px;
+  }
+  #vic_pic {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .traffic {
+    margin: 0px 15px 15px 15px;
+  }
+  .traffic-title {
+    width: 30%;
+  }
+  .traffic-nav {
+    width: 70%;
+    text-align: right;
+  }
+  .traffic-nav-link {
+    margin-left: 15px;
+  }
+  .daily {
+    padding-left: 10px;
+    padding-right: 5px;
+    border-top: solid 3px;
+  }
+  .mobile {
+    padding-left: 10px;
+    border-left: solid 3px;
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+    border-color: #b7b9b6;
+  }
+  .social {
+    margin: auto 15px 20px 15px;
+  }
+  .social-container {
+    width: 32%;
+    height: 80px;
+  }
+  .social-title {
+    margin-left: 15px;
+  }
+  .social-text {
+    margin: 0px;
+    width: 70%;
+    text-align: left;
+  }
+  .social-name {
+    margin: 10px 20px 5px 20px;
+  }
+  .social-number {
+    margin: 0px auto auto 15px;
+    height: 50px;
+  }
+
+  .members-container,
+  .activity-container {
+    width: 100%;
+    height: 80px;
+  }
+  .members-text,
+  .activity-text {
+    width: 100%;
+    margin: 0px 35px 0px 15px;
+  }
+  .hour,
+  .act-text {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .act-text {
+    margin-top: 10px;
+  }
+  .date {
+    margin: 30px 15px 0px auto;
+  }
+  .profile-image {
+    height: 60px;
+    margin: 10px 5px auto 15px;
+  }
+  .member-title {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  #userField {
+    height: 40px;
+    margin: 5px 15px 5px 0px;
+  }
+  #messageField {
+    height: 130px;
+    margin: 5px 15px 5px 0px;
+  }
+  #send {
+    height: 50px;
+    margin: 5px 15px 5px 0px;
+  }
+  .message {
+    padding-left: 15px;
+  }
+
+  .settings {
+    padding: 5px 15px;
+  }
+  #timezone {
+    height: 30px;
+    width: 88%;
+    margin: 17px 15px 0px 15px;
+  }
+  .settings-button {
+    margin: 10px 15px 20px 15px;
+  }
+  .sen {
+    margin: 10px 15px 20px 15px;
+  }
+  .switch-light {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    width: 88%;
+  }
+  #save {
+    height: 50px;
+    width: 45%;
+    margin: 5px 15px 5px 0px;
+  }
+  #cancel {
+    height: 50px;
+    width: 45%;
+    margin: 5px 15px 5px 0px;
   }
 }
 
