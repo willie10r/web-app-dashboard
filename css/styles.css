@@ -1,17 +1,18 @@
 body {
-  margin: 0;
+  margin: 0px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "grid_header"
+    "grid_nav"
+    "grid_main";
 }
 .student_name {
   margin: 20px 5px auto 0px;
   font-weight: 100;
   font-size: 15px;
-}
-.grid-container {
-  grid-template-columns: 55px 1fr;
-  grid-template-areas:
-    "grid_header"
-    "grid_nav"
-    "grid_main";
 }
 
 .grid_header {
@@ -24,11 +25,14 @@ body {
   display: grid;
   grid-area: grid_main;
 }
+
 .main-header {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
+  display: flex;
+  flex-direction: row;
 }
 .alert-container {
   grid-row-start: 2;
@@ -59,12 +63,10 @@ body {
   width: 75vw;
 }
 
-/* working section on the alert prompt */
-
 .alert-banner {
   display: flex;
   flex-direction: row;
-  height: 45px;
+  height: 55px;
   background-color: darkgreen;
   border-radius: 15px;
   margin-left: 15px;
@@ -72,7 +74,7 @@ body {
 }
 .alert-banner-close {
   position: absolute;
-  right: 2vw;
+  left: 115vw;
   margin-top: 13px;
   padding-left: 10px;
   padding-right: 10px;
@@ -132,13 +134,14 @@ h1 {
   margin-top: 7px;
 }
 .social-image {
-  width: 40px;
+  width: 55px;
+  margin: 20px 20px auto 20px;
+  height: 31px;
+}
+.svgimg {
   background-color: #70c66b;
 
-  border: 1px solid black;
-  margin: 20px 20px auto 20px;
-  border-radius: 50px;
-  height: 40px;
+  border-radius: 30px;
 }
 #vic_pic {
   width: 40px;
@@ -152,6 +155,7 @@ h1 {
   flex-direction: row;
 }
 .traffic {
+  height: 50vh;
   margin: 0px 15px 15px 15px;
 }
 .traffic-header {
@@ -175,6 +179,7 @@ h1 {
   border-radius: 10px;
 }
 .daily {
+  height: 50vh;
   padding-left: 10px;
   padding-right: 5px;
   border-top: solid 3px;
@@ -182,15 +187,16 @@ h1 {
   border-color: #b7b9b6;
 }
 .mobile {
+  height: 50vh;
   padding-left: 10px;
-  border-left: solid 3px;
-  border-top: solid 3px;
-  border-bottom: solid 3px;
+  border-left: solid 1px;
+  border-top: solid 1px;
   border-color: #b7b9b6;
+  margin-bottom: 20px;
 }
 .social {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin: auto 15px 20px 15px;
 }
@@ -200,16 +206,18 @@ h1 {
   background-color: rgb(228, 228, 228);
   border: 1px solid black;
   border-radius: 5px;
-  width: 32%;
+  width: 99%;
   height: 80px;
+  margin-bottom: 15px;
 }
 .social-title {
   margin-left: 15px;
 }
 .social-text {
   margin: 0px;
-  width: 70%;
+  width: 10%;
   text-align: left;
+  font-size: xx-large;
 }
 .social-name {
   margin: 10px 20px 5px 20px;
@@ -227,11 +235,12 @@ h1 {
 .members-container,
 .activity-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
   width: 100%;
   background-color: rgb(228, 228, 228);
   border: 1px solid black;
-  height: 80px;
+  height: 350px;
   border-top: none;
   border-right: none;
 }
@@ -240,21 +249,33 @@ h1 {
   width: 100%;
   margin: 0px 35px 0px 15px;
 }
+.members-text {
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 15px;
+}
 .hour,
 .act-text {
   margin-top: 0;
   margin-bottom: 5px;
+  font-size: x-large;
 }
 .act-text {
   margin-top: 10px;
+  margin-left: 43vw;
+  margin-right: 40vw;
+}
+.hour {
+  margin-left: 75vw;
 }
 .date {
-  margin: 30px 15px 0px auto;
+  display: none;
 }
 .profile-image {
-  height: 60px;
-  border-radius: 40px;
-  margin: 10px 5px auto 15px;
+  height: 160px;
+  width: 160px;
+  border-radius: 90px;
+  margin: auto;
 }
 .member-title {
   margin: 0;
@@ -262,6 +283,7 @@ h1 {
   border: solid 1px black;
   border-bottom: none;
   border-right: none;
+  font-size: xx-large;
 }
 
 .message,
@@ -277,46 +299,54 @@ h1 {
   height: 40px;
   margin: 5px 15px 5px 0px;
   border-radius: 10px;
+  font-size: x-large;
 }
 #messageField {
   height: 130px;
   margin: 5px 15px 5px 0px;
   border-radius: 10px;
+  font-size: x-large;
 }
 #send {
-  height: 50px;
+  height: 70px;
   background-color: #70c66b;
-
   border-radius: 10px;
   margin: 5px 15px 5px 0px;
-  font-size: medium;
+  font-size: larger;
   font-weight: 700;
 }
 .message {
-  padding-left: 15px;
+  padding-left: 58px;
+  padding-right: 58px;
 }
 
 .settings {
   padding: 5px 15px;
+  padding-left: 60px;
 }
 #timezone {
-  height: 30px;
-  width: 88%;
-  margin: 17px 15px 0px 15px;
+  height: 50px;
+  width: 90%;
+  margin: 17px 15px 0px 0px;
+  font-size: large;
 }
 .settings-button {
-  margin: 10px 15px 20px 15px;
+  margin: 10px 15px 20px 0px;
 }
 .sen {
   margin: 10px 15px 20px 15px;
 }
 .switch-light {
-  margin-left: 15px;
+  margin-left: 0px;
   margin-bottom: 20px;
-  width: 88%;
+  width: 90%;
+  font-size: x-large;
+}
+h3 {
+  font-size: x-large;
 }
 #save {
-  height: 50px;
+  height: 65px;
   width: 45%;
   background-color: #70c66b;
   border-radius: 10px;
@@ -325,8 +355,8 @@ h1 {
   font-weight: 700;
 }
 #cancel {
-  height: 50px;
-  width: 45%;
+  height: 65px;
+  width: 44%;
   background-color: #6c6e6b;
   border-radius: 10px;
   margin: 5px 15px 5px 0px;
@@ -334,12 +364,7 @@ h1 {
   font-weight: 700;
 }
 
-/* dont worry about anything below this linew till
- after the main styleing is done. */
-
 /* styles for the next screen s */
-@media (min-width: 320px) {
-}
 
 @media (min-width: 768px) {
   .grid-container {
@@ -375,12 +400,12 @@ h1 {
 @media (min-width: 1024px) {
   .grid-container {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr, 2fr;
     grid-template-rows: auto;
     grid-template-areas:
       "grid_header"
-      "grid_nav "
-      "grid_main";
+      "grid_nav" "grid_main"
+      "grid_nav" "grid_main";
   }
   .main-header {
     display: flex;
@@ -390,6 +415,7 @@ h1 {
     grid-row-start: 1;
     grid-row-end: 2;
   }
+
   .alert-container {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -397,6 +423,11 @@ h1 {
     grid-row-end: 3;
   }
 
+  .grid_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   .headline {
     margin-left: 15px;
     margin-right: 10px;
@@ -407,8 +438,6 @@ h1 {
     height: 30px;
     width: 75vw;
   }
-
-  /* working section on the alert prompt */
 
   .alert-banner {
     height: 45px;
