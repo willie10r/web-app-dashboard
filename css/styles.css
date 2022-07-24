@@ -1,3 +1,76 @@
+body {
+  margin: 0px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "grid_header"
+    "grid_nav"
+    "grid_main";
+}
+.header {
+  grid-area: grid_header;
+}
+.navigation {
+  grid-area: grid_nav;
+}
+.main {
+  grid-area: grid_main;
+}
+.noti-bell {
+  width: 25px;
+}
+.nav_bar_img {
+  width: 25px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+      "header header"
+      "navigation main";
+  }
+  .grid_main {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+  .traffic,
+  .social {
+    grid-column: 1 / span 2;
+  }
+  .daily,
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+  .mobile,
+  .activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
+  .widget-container-full,
+  .widget-container-half {
+    width: 95vw;
+  }
+  .widget-container-full {
+    width: 90vw;
+  }
+  .widget-container-half {
+    width: 45vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+      "header header"
+      "navigation main";
+  }
+}
 /* style sheet for the toggle switches */
 
 /*
