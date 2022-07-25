@@ -142,6 +142,7 @@ h1 {
 }
 .social {
   grid-area: social;
+  border-bottom: solid 1px black;
 }
 .social-container {
   display: flex;
@@ -153,7 +154,7 @@ h1 {
 }
 .social-image {
   width: 60px;
-  padding-top: 13px;
+  padding-top: 15px;
   padding-left: 10px;
 }
 .social-text {
@@ -163,25 +164,117 @@ h1 {
 }
 .social-name {
   margin: 0px;
+  font-weight: 400;
 }
 .social-number {
-  margin-left: ;
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 .svgimg {
   background-color: #70c66b;
   border-radius: 30px;
 }
+.members,
+.activity {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.member-title {
+  padding-right: 50%;
+}
 .members {
   grid-area: members;
 }
+.profile-image {
+  width: 80px;
+  border-radius: 45px;
+  margin-top: 15px;
+}
+.date {
+  margin-top: 5px;
+}
+.act-text {
+  margin-bottom: 0px;
+}
+.hour {
+  margin-top: 5px;
+}
+.members-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: solid 1px black;
+}
+
 .activity {
   grid-area: activity;
 }
+.activity-container {
+  border-bottom: solid 1px black;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.dates {
+  display: none;
+}
 .message {
   grid-area: message;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  border-bottom: solid 1px black;
+}
+.form-field {
+  background-color: rgb(228, 224, 224);
+  border-radius: 5px;
+  height: 50px;
+  width: 98%;
+  margin-bottom: 15px;
+  font-size: larger;
+}
+.form-area {
+  background-color: rgb(228, 224, 224);
+  border-radius: 5px;
+  height: 150px;
+  width: 98%;
+  font-size: x-large;
+}
+#send {
+  background-color: #70c66b;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.button-primary:hover {
+  background-color: green;
 }
 .settings {
   grid-area: settings;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.switch-light {
+  margin-bottom: 15px;
+}
+#timezone {
+  width: 100%;
+}
+#save {
+  height: 50px;
+  width: 46%;
+  border-radius: 10px;
+  background-color: #70c66b;
+  margin-right: 15px;
+}
+#cancel {
+  height: 50px;
+  width: 46%;
+  border-radius: 10px;
+  background-color: gray;
 }
 @media (min-width: 768px) {
   .grid-container {
