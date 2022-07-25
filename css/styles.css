@@ -61,8 +61,128 @@ h1 {
 
 .grid_main {
   grid-area: grid_main;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "main-header"
+    "alert-container"
+    "traffic"
+    "daily"
+    "mobile"
+    "social"
+    "members"
+    "activity"
+    "message"
+    "settings";
+}
+.main-header {
+  grid-area: main-header;
+  display: flex;
+  flex-direction: row;
+}
+.tab {
+  margin: 15px 0px auto 28px;
+}
+.text-area {
+  height: 30px;
+}
+.alert-container {
+  grid-area: alert-container;
+}
+.alert-banner {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  border-radius: 10px;
+  margin: 0px 15px 0px 15px;
+  font-size: small;
+}
+.alert-banner-close {
+  position: absolute;
+  right: 30px;
+}
+.alert-banner-close:hover {
+  background-color: #70c66b;
+  border-radius: 5px;
+  padding: 5px;
+}
+.traffic {
+  grid-area: traffic;
+  padding-left: 5px;
+  border-bottom: solid 1px grey;
+  padding-bottom: 20px;
 }
 
+.traffic-nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+}
+.traffic-nav-link {
+  padding-left: 5px;
+  padding-right: 5px;
+  list-style: none;
+}
+.traffic-nav-link:hover {
+  background-color: #70c66b;
+  border-radius: 5px;
+}
+.daily {
+  grid-area: daily;
+  padding-left: 5px;
+  border-bottom: solid 1px grey;
+  padding-bottom: 20px;
+}
+.mobile {
+  grid-area: mobile;
+  padding-left: 5px;
+  border-bottom: solid 1px grey;
+  padding-bottom: 20px;
+}
+.social {
+  grid-area: social;
+}
+.social-container {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px gray;
+  background-color: #ccc7c7;
+  border-radius: 15px;
+  margin: 15px;
+}
+.social-image {
+  width: 60px;
+  padding-top: 13px;
+  padding-left: 10px;
+}
+.social-text {
+  margin: 10px auto auto 30px;
+  font-size: x-large;
+  font-weight: 800;
+}
+.social-name {
+  margin: 0px;
+}
+.social-number {
+  margin-left: ;
+}
+.svgimg {
+  background-color: #70c66b;
+  border-radius: 30px;
+}
+.members {
+  grid-area: members;
+}
+.activity {
+  grid-area: activity;
+}
+.message {
+  grid-area: message;
+}
+.settings {
+  grid-area: settings;
+}
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 55px 1fr;
