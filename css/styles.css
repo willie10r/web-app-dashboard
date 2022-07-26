@@ -321,32 +321,7 @@ h1 {
   .grid_main {
     grid-template-columns: 50%;
     grid-template-rows: auto;
-    /* grid-template-areas:
-      "main-header" "main-header"
-      "alert-container" "alert-container"
-      "traffic" "traffic"
-      "daily" "mobile"
-      "social" "social"
-      "members" "members"
-      "activity" "activity"
-      "message" "message"
-      "settings" "settings"; */
   }
-
-  /* .traffic,
-  .social {
-    grid-column: 1 / span 2;
-  }
-  .daily,
-  .members,
-  .message {
-    grid-column: 1 / span 1;
-  }
-  .mobile,
-  .activity,
-  .settings {
-    grid-column: 2 / span 1;
-  } */
 
   .main-header {
     grid-area: main-header;
@@ -472,8 +447,41 @@ h1 {
   .grid-container {
     grid-template-columns: 55px 1fr;
     grid-template-areas:
-      "header header"
-      "navigation main";
+      "grid_header grid_header"
+      "grid_nav grid_main";
+  }
+  .text-area {
+    width: 97%;
+  }
+  .daily {
+    border-right: solid 1px black;
+  }
+  .social-title {
+    margin-bottom: 0px;
+  }
+  .social-container {
+    width: 30%;
+  }
+
+  .members {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+  }
+
+  .activity {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    border-bottom: solid 1px black;
+  }
+  .message {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+  .settings {
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
   }
 }
 /* style sheet for the toggle switches */
