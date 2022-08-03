@@ -33,6 +33,13 @@ h1 {
   background-color: #70c66b;
   border-radius: 10px;
 }
+.noti-icon {
+  width: 7px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #70c66b;
+  margin-left: 60%;
+}
 #vic_pic {
   width: 40px;
   height: 40px;
@@ -154,9 +161,17 @@ h1 {
   margin: 15px;
 }
 .social-image {
-  width: 60px;
-  padding-top: 15px;
-  padding-left: 10px;
+  width: 55px;
+  height: 55px;
+  background-color: #70c66b;
+  border-radius: 40px;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.svgimg {
+  width: 30px;
+  padding-top: 13px;
 }
 .social-text {
   margin: 10px auto auto 30px;
@@ -171,10 +186,6 @@ h1 {
   font-size: xx-large;
   margin-top: 10px;
   margin-bottom: 0px;
-}
-.svgimg {
-  background-color: #70c66b;
-  border-radius: 30px;
 }
 .members,
 .activity {
@@ -260,7 +271,16 @@ h1 {
 }
 .switch-light {
   margin-bottom: 15px;
+  width: 100%;
 }
+.tog-swt {
+  width: 80px;
+  margin-left: 75%;
+}
+.swt-title {
+  margin-top: 80px;
+}
+
 #timezone {
   width: 100%;
 }
@@ -429,6 +449,9 @@ h1 {
   .settings-button {
     display: flex;
     justify-content: center;
+  }
+  .tog-swt {
+    width: 120px;
   }
 
   .widget-container-full,
