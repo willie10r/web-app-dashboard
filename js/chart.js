@@ -63,7 +63,7 @@ let dailyChart = new Chart(dailyCanvas, {
 });
 const mobileCanvas = document.getElementById("mobile-chart");
 const mobileData = {
-  lables:["Desktop", "Tablet", "Phones"],
+  lables: ["Desktop", "Tablet", "Phones"],
   datasets: [{
     lable: '# of Users',  
     data: [2000, 550, 500],
@@ -79,15 +79,16 @@ const mobileOptions = {
   aspectRatio: 1.9,
   plugins: {
     legend: {
+      display: true,
       position: 'right',
       labels: {
-        boxWidth: 20,
+        boxWidth: 40,
         fontStyle: 'bold'
       }
     }
   }
 };
-const mobileChart = new Chart(mobileCanvas, {
+let mobileChart = new Chart(mobileCanvas, {
   type: 'doughnut',
   data: mobileData,
   options: mobileOptions
