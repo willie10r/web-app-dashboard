@@ -544,6 +544,7 @@ h1 {
   .message {
     grid-column: 1 / 2;
     grid-row: 8 / 9;
+    border-bottom: none;
   }
   .settings {
     grid-column: 2 / 3;
@@ -551,6 +552,7 @@ h1 {
   }
   .switch-light {
     margin-bottom: 33px;
+    margin-top: 44px;
   }
   #timezone {
     margin-bottom: 33px;
