@@ -1104,3 +1104,20 @@ h1 {
  */
 
 /*# sourceMappingURL=toggle-switch.css.map */
+
+.switch-light {
+  display: flex;
+  flex-direction: row;
+}
+.tog-swt {
+  margin-left: 0;
+}
+#tog-swt1 {
+  margin-left: 24px;
+}
+#tog-swt2 {
+  margin-left: 50px;
+}
+.swt-title {
+  margin-top: 2px;
+}
