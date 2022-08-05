@@ -63,9 +63,9 @@ let dailyChart = new Chart(dailyCanvas, {
 });
 const mobileCanvas = document.getElementById("mobile-chart");
 const mobileData = {
-  lables: ["Desktop", "Tablet", "Phones"],
+  labels: ["Desktop", "Tablet", "Phones"],
   datasets: [{
-    lable: '# of Users',  
+    label: '# of Users',  
     data: [2000, 550, 500],
     borderWidth: 0,
     backgroundColor: [
