@@ -348,6 +348,19 @@ h1 {
   .nav_bar_img {
     width: 30px;
     padding-bottom: 20px;
+    position: fixed;
+  }
+  #home_button {
+    padding-top: 0px;
+  }
+  #charts_button {
+    padding-top: 60px;
+  }
+  #members_button {
+    padding-top: 60px;
+  }
+  #settings_button {
+    padding-top: 60px;
   }
   .grid_main {
     grid-template-columns: 50%;

@@ -85,6 +85,7 @@ const mobileOptions = {
         boxWidth: 40,
         fontStyle: 'bold'
       }
+      
     }
   }
 };
@@ -92,4 +93,5 @@ let mobileChart = new Chart(mobileCanvas, {
   type: 'doughnut',
   data: mobileData,
   options: mobileOptions
+
 });
